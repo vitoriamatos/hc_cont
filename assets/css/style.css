@@ -186,7 +186,7 @@ p {
 .section-title .title_avaliacao {
   
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 600;
   display: contents;
 }
 
@@ -681,8 +681,8 @@ p {
 }
 
 .header-hero-content .header-sub-title {
-  font-size: 38px;
-  font-weight: 300;
+  font-size: 34px;
+  font-weight: 100;
   color: #fff;
 }
 
@@ -701,7 +701,10 @@ p {
 .header-hero-content .header-title {
   font-size: 38px;
   font-weight: 700;
-  color: #fff;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+  -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
+  -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -868,7 +871,10 @@ p {
 }
 
 .single-services .services-content .services-title a:hover {
-  color: #361cc1;
+   background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+ -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
+ -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+ font-weight: bold;
 }
 
 .single-services .services-content .text {
@@ -964,7 +970,9 @@ p {
 
 
 .about-subtitle span{
-  color: #fe6e9a;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+  -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
+  -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
   font-weight: bold;
 }
 
@@ -1348,7 +1356,7 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/footer/footer.png);
+  background-image: url(../images/footer/2.png);
   background-position: top center;
   z-index: -1;
   background-size: cover;
@@ -2243,27 +2251,38 @@ p {
   padding-bottom: 225px;
 }
 
-#tasks{
-  background-color: #ccc;
+#tasks {
+  background-color: #313030;
+  /*background-color: #ebe8e8;*/
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.tasks-area {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+
+.tasks-area{
+  
+  display: flex;
+  justify-content: center;
+
 }
 
 .tasks-item {
   background-color: #f5f5f5;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 50px;
+  padding: 30px;
   border-radius: 20px;
   margin-top: 60px;
+
+}
+.tasks_main{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
+.line-center{
+  margin: 0 auto;
+}
 .hr {
   margin-top: 10px;
   border: none;
@@ -2278,20 +2297,19 @@ p {
   margin: 20px 0;
   font-weight: 300;
   font-size: 14px;
+  color: #2e2e2e ;
 }
 
 .list-item::before {
   content: '▶';
-  color: pink;
+  color: #fe7a7b;
   margin-right: 8px;
   font-size: 18px;
 }
 
 .list-item:hover {
-  color: pink;
+  color: #fe7a7b;
 }
-
-
 
 .image-area {
   display: flex;
@@ -2313,10 +2331,9 @@ p {
 .image-text {
   text-align: center;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
+  color: #2e2e2e;
 }
-
-
 
 .button-main {
   text-align: center;
@@ -2327,7 +2344,7 @@ p {
   border: 1px solid black;
   padding: 15px;
   color: white;
-  background-color: pink;
+  background-color: #fe7a7b;
   border-radius: 5px;
   display: inline-block;
   transition: background-color 0.35s ease, color 0.35s ease;
@@ -2337,8 +2354,22 @@ p {
   color: #fff;
 }
 
-.tasks-title{
+.tasks-title {
   text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+  
+}
+
+.subtitle-tasks{
+  color: #a3a1a1;
+  font-size: 20px;
+  margin-top:  20px;
+}
+
+.subtitle-tasks span{
+  color: #fe7a7b;
+  margin-top: 20px;
 }
 
 .about-itens{
@@ -2411,28 +2442,44 @@ p {
   display: flex;
   justify-content: center;
 }
-
 .carrousel-main{
+  position: relative;
+  background: none; /* Remove o background direto */
+}
+.carrousel-main::before{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../images/review/review.jpg');
   background-repeat: no-repeat; /* Evita repetição da imagem */
   background-size: cover; /* Faz a imagem ocupar todo o espaço do contêiner */
   background-position: center; /* Centraliza a imagem no contêiner */
   padding: 10px;
   margin-top: 10%;
+  filter: brightness(0.5);
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+  position: absolute;
 }
+.carousel-container{
+  position: relative;
+  z-index: 1; 
+  margin-top: 10%;
 
+  
+}
 .card {
   margin-left: 20px;
 }
 
 .card-item {
   display: block;
-  margin: 25px;
+  margin: 30px;
 }
 
 .card-image {
-  width: 100px;
-  height: 100px;
+ width: 40%;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
@@ -2443,8 +2490,8 @@ p {
 
 .card-title {
   display: block;
-  font-weight: 400;
-  color: pink;
+  font-weight: 600;
+  color: #fe7a7b;
 }
 
 .card-subtitle {
@@ -2456,10 +2503,12 @@ p {
   display: block;
   font-weight: 300;
   flex-wrap: wrap;
+  color: #fff;
+  text-align: center;
 }
 
 .card-title-area {
-  background-color: #f5f5f5;
+  background-color:  #757272;;
   padding: 40px;
   position: relative;
   height: 150px;
@@ -2475,9 +2524,10 @@ p {
   position: absolute;
   pointer-events: none;
   border-color: rgba(243, 243, 243, 0);
-  border-bottom-color: #f3f3f3;
+  border-bottom-color: #757272;;;
   border-width: 18px 9px 18px 9px;
   margin-left: -5px;
+  color: #fff;
 }
 
 .card-text-area {
@@ -2518,7 +2568,7 @@ p {
 }
 
 .carousel-container .slick-dots li.slick-active button:before {
-  color: pink;
+  color: #fe7a7b;
   opacity: 1;
 }
 
@@ -2557,7 +2607,7 @@ p {
   justify-content: space-between;
 }
 .faq-section {
-  background: #fdfdfd;
+  background: #fff;
   min-height: 100vh;
   padding: 10vh 0 0;
 }
@@ -2690,4 +2740,137 @@ margin-bottom: 14px;
 
 .faq-area {
   margin-top: 5%;
+}
+
+.form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5); /* Aplica o brilho apenas ao background */
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+.form-container .container,
+.form-container .carousel-container {
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo fique acima do pseudo-elemento */
+}
+
+
+
+.contact-main{
+  position: relative;
+  background: none; /* Remove o background direto */
+  margin-bottom: 15%;
+}
+.contact-main::before{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/contact/cta-bg.jpg');
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-size: cover; /* Faz a imagem ocupar todo o espaço do contêiner */
+  background-position: center; /* Centraliza a imagem no contêiner */
+  padding: 10px;
+  margin-top: 10%;
+  filter: brightness(0.4);
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+  position: absolute;
+}
+.contact-container{
+  position: relative;
+  z-index: 1; 
+  margin-top: 10%;
+
+  
+}
+
+
+/* Estilos gerais da seção de contato */
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fe6e9a;
+}
+
+/* Estilo do formulário */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #000000;
+  filter: opacity(0.8);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+/* Estilo dos inputs e textarea */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #fe6e9a;
+  outline: none;
+}
+
+/* Estilo do botão de envio */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #fe6e9a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #fe8464;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+.card-faq{
+
+  padding: 20px;
 }
