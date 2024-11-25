@@ -2427,12 +2427,16 @@ p {
   display: block;
 }
 
-.social_item{
- 
- justify-content: center;
+
+.social_item {
+  justify-content: center;
   margin: 0 auto;
   text-align: center;
+  transition: transform 0.3s ease; /* Suaviza o efeito ao passar o mouse */
+}
 
+.social_item:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
 }
 
 
