@@ -1504,7 +1504,7 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/footer/2.png);
+  background-image: url(../images/header/footer.png);
   background-position: top center;
   z-index: -1;
   background-size: cover;
@@ -2780,7 +2780,7 @@ p {
   }
 
   .contact-form{
-    
+
   }
 }
 .faq-section {
