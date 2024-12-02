@@ -160,6 +160,10 @@ p {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .contact-image-mobile{
+    display: none;
+  }
 }
 
 /*===== All Section Title Style =====*/
@@ -2762,6 +2766,18 @@ p {
 .faq-title{
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (min-width: 374px) and (max-width: 767px) {
+ 
+  .faq-title{
+    display: flex;
+    justify-content: left;
+  }
+
+  .faq-title span{
+    text-align: left!important;
+  
+  }
 }
 .faq-section {
   background: #fff;
