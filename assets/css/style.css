@@ -670,7 +670,7 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
   .navbar-btn {
-    position: absolute;
+    /*position: absolute;*/
     top: 50%;
     right: 50px;
     -webkit-transform: translateY(-50%);
@@ -2389,6 +2389,7 @@ p {
   
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 
 }
 
@@ -2465,6 +2466,7 @@ p {
 .button-main {
   text-align: center;
   padding-bottom: 40px;
+  margin-top: 50px;
 }
 
 .hover-button-container {
