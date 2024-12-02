@@ -549,6 +549,16 @@ p {
   .sticky .navbar {
     padding: 15px 0;
   }
+
+  
+  .row.no-gutters.labels-spans.mobile{
+  display: none;
+  justify-content: center;
+     /* margin-top: 20px; */
+     margin-top: 30px;
+   
+}
+
 }
 
 
@@ -2436,10 +2446,15 @@ p {
 }
 
 .list-item::before {
-  content: '▶';
-  color: #fe7a7b;
+  content: '';
+  background-image: url('../images/tasks/jogar.png'); /* Substitua pelo caminho real da imagem */
+  background-size: contain; /* Ajusta a imagem para caber */
+  background-repeat: no-repeat; /* Impede que a imagem seja repetida */
+  display: inline-block; /* Necessário para exibir a imagem */
+  width: 18px; /* Defina o tamanho da imagem */
+  height: 18px; /* Defina o tamanho da imagem */
   margin-right: 8px;
-  font-size: 18px;
+  vertical-align: middle; /* Alinha com o texto */
 }
 
 .list-item:hover {
