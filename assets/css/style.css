@@ -483,7 +483,7 @@ p {
 .sticky {
   position: fixed;
   z-index: 99;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255 255 255 / 78%);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
@@ -656,22 +656,41 @@ p {
 
 /*===== HEADER HERO =====*/
 .header-hero {
-  position: relative;
-  z-index: 5;
-  background-position: bottom center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  background-image: url('../images/header/foto7.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff; /* Ajuste se necessário */
 }
 
+
+.header-hero-content {
+  max-width: 800px; /* Para limitar a largura do texto */
+  padding: 10%;
+}
+
+.header-sub-title,
+.header-title,
+.header-sub-title-span {
+  margin: 10px 0;
+  
+}
 #particles-1 {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -1; */
 }
 
 .header-hero-content {
-  padding-top: 180px;
+  margin-top: 3rem;
 }
 
 @media (max-width: 767px) {
@@ -684,8 +703,15 @@ p {
   font-size: 34px;
   font-weight: 100;
   color: #fff;
+  top: 100px;
 }
 
+
+.header-sub-title-span{
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+}
 @media (max-width: 767px) {
   .header-hero-content .header-sub-title {
     font-size: 24px;
@@ -734,6 +760,7 @@ p {
 
 .header-hero-image img {
   max-width: 650px;
+  filter: opacity(0);
 }
 
 @media (max-width: 767px) {
@@ -805,6 +832,12 @@ p {
 /*===========================
   SERVICES css 
 ===========================*/
+.row.justify-content-center {
+  
+  flex-wrap: wrap; /* Mantém o layout responsivo */
+
+  margin-bottom: 5rem;
+}
 .single-services {
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
@@ -814,11 +847,17 @@ p {
   padding: 50px 30px;
   border: 2px solid transparent;
   border-radius: 8px;
+  
+  height: 100%; /* Preenche a altura disponível */
+  min-height: 300px; /* Altura mínima para manter consistência */
+  max-height: 450px;
+ 
 }
 
 @media (max-width: 767px) {
   .single-services {
     padding: 20px 20px 30px;
+    min-height: 200px; /* Ajuste para dispositivos móveis */
   }
 }
 
@@ -1087,7 +1126,7 @@ p {
 }
 
 .counter-wrapper .single-counter {
-  max-width: 155px;
+ 
   height: 120px;
   border-radius: 60px;
   position: relative;
@@ -1114,7 +1153,7 @@ p {
   content: "";
   width: 170px;
   height: 150px;
-  border-radius: 60px;
+  border-radius: 100px;
   top: 0;
   left: 0;
   -webkit-transform: rotate(-45deg);
