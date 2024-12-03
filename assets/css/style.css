@@ -727,7 +727,7 @@ p {
 /*===== HEADER HERO =====*/
 .header-hero {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   align-items: center;
   text-align: left;
   background-image: url('../images/header/foto.png');
@@ -1618,6 +1618,7 @@ p {
   background-position: top center;
   position: relative;
   z-index: 5;
+  display: block;
 }
 
 .footer-area::before {
@@ -1635,7 +1636,7 @@ p {
 
 @media only screen and (min-width: 1921px) {
   .footer-area::before {
-    height: 1120px;
+   
   }
 }
 
