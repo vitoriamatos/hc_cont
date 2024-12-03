@@ -172,10 +172,10 @@ p {
     linear,
     left top,
     left bottom,
-    from(#fe8464),
-    to(#fe6e9a)
+    from(#fe6e9a),
+    to(#fa899c)
   );
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  background: linear-gradient(#fe6e9a 0%, #fa899c 100%);
   width: 150px;
   height: 5px;
   margin-bottom: 10px !important;
@@ -678,7 +678,7 @@ p {
 
 .navbar-nav .nav-item a:hover,
 .navbar-nav .nav-item a.active {
-  color: #fe7a7b;
+  color: #fa899c;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -698,11 +698,11 @@ p {
     linear,
     left top,
     right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
+    from(#fe6e9a),
+    color-stop(50%, #fa899c ),
+    to(#fe6e9a)
   );
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(to right, #fe6e9a 0%, #fa899c 50%, #fe6e9a 100%);
   background-size: 200%;
 }
 
@@ -721,7 +721,7 @@ p {
 
 .sticky .navbar-nav .nav-item a.active,
 .sticky .navbar-nav .nav-item a:hover {
-  color: #fe7a7b;
+  color: #fa899c;
 }
 
 /*===== HEADER HERO =====*/
@@ -799,7 +799,7 @@ p {
 .header-hero-content .header-title {
   font-size: 38px;
   font-weight: 700;
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+  background: linear-gradient(#fe6e9a 0%, #fa899c 100%); /* Define o gradiente */
   -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
   -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
   font-weight: bold;
@@ -1008,7 +1008,7 @@ p {
 }
 
 .single-services .services-content .services-title a:hover {
-   background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+   background: linear-gradient(#fe6e9a 0%, #fa899c 100%); /* Define o gradiente */
  -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
  -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
  font-weight: bold;
@@ -1028,7 +1028,7 @@ p {
   margin-top: 30px;
   font-size: 16px;
   font-weight: 400;
-  color: #fe7a7b;
+  color: #fa899c;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -1044,7 +1044,7 @@ p {
 }
 
 .single-services:hover {
-  border-color: #fe7a7b;
+  border-color: #fa899c;
 }
 
 .single-services:hover .services-icon .shape {
@@ -1114,7 +1114,7 @@ p {
 
 
 .about-subtitle span{
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+  background: linear-gradient(#fe6e9a 0%, #fa899c 100%); /* Define o gradiente */
   -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
   -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
   font-weight: bold;
@@ -1130,11 +1130,11 @@ p {
     linear,
     left top,
     right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
+    from(#fe6e9a),
+    color-stop(50%, #fa899c),
+    to(#fe6e9a)
   );
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(to right, #fe6e9a 0%, #fa899c 50%, #fe6e9a 100%);
   background-size: 200%;
   height: 50px;
   line-height: 50px;
@@ -1200,7 +1200,7 @@ p {
 .single-abouts .services-content .services-title a {
   font-size: 16px;
   font-weight: 700;
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+  background: linear-gradient(#fe6e9a 0%, #fa899c 100%); /* Define o gradiente */
  -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
  -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
  font-weight: bold;
@@ -1221,7 +1221,7 @@ p {
 }
 
 .single-abouts .services-content .services-title a:hover {
-   background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+   background: linear-gradient(#fe6e9a 0%, #fa899c 100%); /* Define o gradiente */
  -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
  -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
  font-weight: bold;
@@ -1241,7 +1241,7 @@ p {
   margin-top: 10px;
   font-size: 16px;
   font-weight: 400;
-  color: #fe7a7b;
+  color: #fa899c;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -1326,7 +1326,7 @@ p {
   text-align: center;
   border-radius: 50%;
   background-color: #fff;
-  color: #fe8464;
+  color: #fe6e9a;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1423,10 +1423,10 @@ p {
     linear,
     left top,
     left bottom,
-    from(#fe8464),
-    to(#fe6e9a)
+    from(#fe6e9a),
+    to(#fa899c)
   );
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  background: linear-gradient(#fe6e9a 0%, #fa899c 100%);
 }
 
 .counter-wrapper .single-counter.counter-color-3::before {
@@ -1578,11 +1578,11 @@ p {
     linear,
     left top,
     right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
+    from(#fe6e9a),
+    color-stop(50%, #fa899c),
+    to(#fe6e9a)
   );
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(to right, #fe6e9a 0%, #fa899c 50%, #fe6e9a 100%);
   background-size: 200%;
 }
 
@@ -1679,7 +1679,7 @@ p {
 }
 
 .footer-about .social li a:hover {
-  color: #fe8464;
+  color: #fe6e9a;
 }
 
 .footer-title .title {
@@ -1722,7 +1722,7 @@ p {
 }
 
 .link-wrapper .link li a:hover {
-  color: #fe8464;
+  color: #fe6e9a;
 }
 
 .footer-contact .contact {
@@ -1758,7 +1758,7 @@ p {
 }
 
 .copyright-content a:hover {
-  color: #fe8464;
+  color: #fe6e9a;
 }
 
 /*===== BACK TO TOP =====*/
@@ -1775,11 +1775,11 @@ p {
     linear,
     left top,
     right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
+    from(#fe6e9a),
+    color-stop(50%, #fa899c),
+    to(#fe6e9a)
   );
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(to right, #fe6e9a 0%, #fa899c 50%, #fe6e9a 100%);
   background-size: 200%;
   text-align: center;
   z-index: 99;
@@ -2585,7 +2585,7 @@ p {
 }
 
 .list-item:hover {
-  color: #fe7a7b;
+  color: #fa899c;
 }
 
 .image-area {
@@ -2622,7 +2622,7 @@ p {
   border: 1px solid black;
   padding: 15px;
   color: white;
-  background-color: #fe7a7b;
+  background-color: #fa899c;
   border-radius: 5px;
   display: inline-block;
   transition: background-color 0.35s ease, color 0.35s ease;
@@ -2646,7 +2646,7 @@ p {
 }
 
 .subtitle-tasks span{
-  color: #fe7a7b;
+  color: #fa899c;
   margin-top: 20px;
 }
 
@@ -2688,7 +2688,7 @@ p {
   display: block;
   justify-content: center;
   padding: 20px; 
-  background-color: #fe6e9a; 
+  background-color: #fa899c; 
   border-radius: 50%;
   height: 100px;
 }
@@ -2778,7 +2778,7 @@ p {
 .card-title {
   display: block;
   font-weight: 600;
-  color: #fe7a7b;
+  color: #fa899c;
 }
 
 .card-subtitle {
@@ -2855,7 +2855,7 @@ p {
 }
 
 .carousel-container .slick-dots li.slick-active button:before {
-  color: #fe7a7b;
+  color: #fa899c;
   opacity: 1;
 }
 
@@ -3109,7 +3109,7 @@ margin-bottom: 14px;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #fe6e9a;
+  color: #fa899c;
 }
 
 /* Estilo do formulário */
@@ -3148,7 +3148,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: #fe6e9a;
+  border-color: #fa899c;
   outline: none;
 }
 
@@ -3156,7 +3156,7 @@ input:focus, textarea:focus {
 .submit-btn {
   width: 100%;
   padding: 12px;
-  background-color: #fe6e9a;
+  background-color: #fa899c;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -3166,7 +3166,7 @@ input:focus, textarea:focus {
 }
 
 .submit-btn:hover {
-  background-color: #fe8464;
+  background-color: #fe6e9a;
 }
 
 .submit-btn:focus {
