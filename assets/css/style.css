@@ -1052,6 +1052,9 @@ p {
   transform: rotate(25deg);
 }
 
+
+
+
 /*===========================
 	ABOUT css 
 ===========================*/
@@ -1142,6 +1145,126 @@ p {
 .about-content .main-btn:hover {
   background-position: right center;
 }
+
+
+.single-image{
+  width: 25%;
+}
+.single-abouts {
+
+  transition: all 0.3s ease-out 0s;
+
+  border: 2px solid transparent;
+  border-radius: 8px;
+  
+  height: 100%; /* Preenche a altura disponível */
+  min-height: 300px; /* Altura mínima para manter consistência */
+  max-height: 450px;
+ 
+}
+@media (max-width: 767px) {
+  .single-abouts {
+    padding: 20px 20px 30px;
+    min-height: 200px; /* Ajuste para dispositivos móveis */
+  }
+}
+
+.single-abouts .services-icon {
+  display: inline-block;
+  position: relative;
+}
+
+.single-abouts .services-icon img {
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.single-abouts .services-icon .shape-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.single-abouts .services-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  color: #fff;
+}
+
+.single-abouts .services-content .services-title a {
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+ -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
+ -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+ font-weight: bold;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-abouts .services-content .services-title a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-abouts .services-content .services-title a {
+    font-size: 20px;
+  }
+}
+
+.single-abouts .services-content .services-title a:hover {
+   background: linear-gradient(#fe8464 0%, #fe6e9a 100%); /* Define o gradiente */
+ -webkit-background-clip: text; /* Faz o gradiente aplicar ao texto */
+ -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+ font-weight: bold;
+}
+
+.single-abouts .services-content .text {
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .single-abouts .services-content .text {
+    margin-top: 10px;
+  }
+}
+
+.single-abouts .services-content .more {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fe7a7b;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single-abouts .services-content .more i {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.single-abouts .services-content .more:hover {
+  letter-spacing: 2px;
+}
+
+.single-abouts:hover {
+  
+}
+
+.single-abouts:hover .services-icon .shape {
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+
 
 /*===========================
 	VIDEO COUNTER css 
@@ -2546,7 +2669,7 @@ p {
 }
 
 .image-counter{
-  width: 40%;
+  width: 80%;
   display: block;
   justify-content: center;
   margin: 0 auto;
@@ -2564,7 +2687,10 @@ p {
 .counter-container{
   display: block;
   justify-content: center;
-  padding: 20px;  
+  padding: 20px; 
+  background-color: #fe6e9a; 
+  border-radius: 50%;
+  height: 100px;
 }
 
 .social_container{
